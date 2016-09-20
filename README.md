@@ -588,8 +588,8 @@ Note: In general, for testing and production environment, DOOD is chosen instead
         •	Install the ibm-containers cf CLI plugin using the below command
                     cf install-plugin https://static-ice.ng.bluemix.net/ibm-containers-linux_x86 -f
         •	Login to IBM Bluemix using the login command as specified below
-                    cf login -a https://api.ng.bluemix.net -u prokarmapoc@gmail.com -p prokarm@2013 
-                    -o prokarmapoc -s poc
+                    cf login -a https://api.ng.bluemix.net -u prokarmapoc@gmail.com -p ********* 
+                    -o ******** -s ****
         •	Set the namespace for the ibm containers (This is only one time set up)
                     cf ic namespace set poc_ic
         •	Login to IBM containers 
@@ -631,8 +631,8 @@ Note: In general, for testing and production environment, DOOD is chosen instead
                 }
                 stage 'Deploy To IBM BLUEMIX'
                     node {
-                        sh "/cf login -a https://api.ng.bluemix.net -u prokarmapoc@gmail.com -p prokarm@2013 
-                        -o prokarmapoc -s poc"
+                        sh "/cf login -a https://api.ng.bluemix.net -u prokarmapoc@gmail.com -p ********* 
+                        -o ******** -s  ****"
                         sh "/cf ic login"
                         sh "docker tag retailstore/product-catalogue-service
                         registry.ng.bluemix.net/poc_ic/product-catalogue-service:latest"
